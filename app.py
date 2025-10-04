@@ -1,5 +1,5 @@
-from calc_choices import do_addition, do_subtraction, do_multiplication 
-#do_division
+from calc_choices import do_addition, do_subtraction
+from multiply import do_multiply
 
 def main():
     print("Welcome to Calculator App")
@@ -24,9 +24,8 @@ def main():
     elif user_input == '2':
         result = do_subtraction(a, b)
     elif user_input == '3':
-        result = do_multiplication(a, b)
-    # elif user_input == '4':
-    #     result = do_division(a, b)
+        result = do_multiply(a, b)
+   
     print("Result: ", result)
 
 if __name__ =="__main__":
